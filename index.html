@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Embed Poll Widget</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
+</head>
+<body class="center">
+    <style>
+        body { background-color: #DBF9FC; }
+
+    </style>
+
+<div class="container">
+	<form>
+    <div id="poll-widget" class="poll-widget">
+        <div class="poll-question">What is your favorite color?</div>
+        <div class="poll-options">
+            <label><input type="radio" name="color" name="radio" value="red" checked=""> Red</label>
+            <label><input type="radio" name="color" name="radio" value="blue"> Blue</label>
+            <label><input type="radio" name="color"   name="radio" value="green"> Green</label>
+            <label><input type="radio" name="color"  name="radio" value="custom"> Custom</label>
+            <input type="text" class="textbox" id="customOption" placeholder="Enter custom option" >
+        </div> <br>
+        <button class="poll-button" onclick="vote()" >Vote</button>
+        <div id="poll-results" class="poll-results"></div>
+        <!-- testing progress bar -->
+        <div style="padding: 1em;">
+            <!-- <div class="progress">
+              <div id="poll-button" class="progress-bar progress-bar-striped active" style="width: 5%"></div> -->
+    </div></form></div>
+
+    <script src="Scripts.js">
+      
+    </script>
+</body>
+</html>
